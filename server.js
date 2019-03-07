@@ -3,10 +3,10 @@ var express = require('express');
 var app = express();
 const path = require('path');
 var bodyParser = require('body-parser');
-var routes = require('./server/');
+// var routes = require('./server/');
 
-app.use(bodyParser.json());
-app.use(routes);
+// app.use(bodyParser.json());
+// app.use(routes);
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('*', function(req, res) {
