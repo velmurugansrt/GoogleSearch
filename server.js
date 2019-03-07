@@ -13,7 +13,7 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
-var server = app.listen(9000, function () {
+var server = app.listen(8080, function () {
     console.log('Node server is running..');
 });
 
